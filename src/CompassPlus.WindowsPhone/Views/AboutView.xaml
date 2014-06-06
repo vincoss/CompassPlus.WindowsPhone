@@ -1,0 +1,52 @@
+﻿<phone:PhoneApplicationPage x:Class="CompassPlus.Views.AboutView"
+                            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                            xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+                            xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}"
+                            FontSize="{StaticResource PhoneFontSizeNormal}"
+                            Foreground="{StaticResource PhoneForegroundBrush}"
+                            SupportedOrientations="Portrait" Orientation="Portrait"
+                            shell:SystemTray.IsVisible="True">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+
+        <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Hidden">
+            <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!-- Header -->
+                <TextBlock Grid.Row="0" 
+                           Margin="0,10"
+                           Text="{Binding Path=LocalizedResources.About, Source={StaticResource LocalizedStrings}}" 
+                           FontSize="{StaticResource PhoneFontSizeLarge}"/>
+
+                <!-- Settings -->
+                <Grid Grid.Row="1">
+
+                    <StackPanel Margin="0,10">
+
+                        <TextBlock Text="{Binding Path=LocalizedResources.CompassPlus, Source={StaticResource LocalizedStrings}}" 
+                                   FontSize="{StaticResource PhoneFontSizeLarge}"
+                                   Margin="0,10"/>
+
+                        <TextBlock Grid.Row="3" Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding VersionString}"
+                                   Margin="0,10"/>
+
+                        <TextBlock Grid.Row="6" Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Copyright}" 
+                                   Margin="0,10"/>
+
+                    </StackPanel>
+
+
+                </Grid>
+
+            </Grid>
+        </ScrollViewer>
+
+    </Grid>
+
+</phone:PhoneApplicationPage>

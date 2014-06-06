@@ -1,0 +1,73 @@
+﻿<phone:PhoneApplicationPage x:Class="CompassPlus.Views.CompassView"
+                            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                            xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+                            xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+                            xmlns:views="clr-namespace:CompassPlus.Views"
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}"
+                            FontSize="{StaticResource PhoneFontSizeNormal}"
+                            Foreground="{StaticResource PhoneForegroundBrush}"
+                            SupportedOrientations="Portrait"
+                            shell:SystemTray.IsVisible="True">
+    
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Compass Rose -->
+        
+        <Grid x:Name="GridCompass" Grid.Row="0" Grid.Column="0">
+
+            <views:CompassRoseView x:Name="UcCompassRoseView" Grid.Column="0" 
+                                   HorizontalAlignment="Left" VerticalContentAlignment="Top" 
+                                   EllipseStyle="{StaticResource EllipseStyle}"
+                                   MarkerStyle="{StaticResource MarkerStyle}"
+                                   TextStyle="{StaticResource TextStyle}"
+                                   Brush="{Binding SelectedColor, Converter={StaticResource ColorToBrushConverter}}"
+                                   CompassRose="{Binding SelectedCompassRose}">
+            </views:CompassRoseView>
+
+        </Grid>
+
+        <!-- Digital values -->
+        
+        <Grid x:Name="GridProperties" Grid.Row="1" Grid.Column="0">
+            <StackPanel Margin="10">
+                
+                <TextBlock Text="{Binding TrueHeading, StringFormat=N1}" 
+                           FontSize="{StaticResource PhoneFontSizeExtraLarge}" FontWeight="Bold"
+                           Foreground="{Binding SelectedColor, Converter={StaticResource ColorToBrushConverter}}"/>
+
+                <TextBlock 
+                           Text="{Binding Path=LocalizedResources.TrueHeading, Source={StaticResource LocalizedStrings}}" 
+                           FontSize="{StaticResource PhoneFontSizeNormal}"
+                           Foreground="{Binding SelectedColor, Converter={StaticResource ColorToBrushConverter}}"/>
+
+                <TextBlock Text="{Binding MagneticHeading, StringFormat=N1}" 
+                           FontSize="{StaticResource PhoneFontSizeExtraLarge}" FontWeight="Bold"
+                           Foreground="{Binding SelectedColor, Converter={StaticResource ColorToBrushConverter}}"/>
+
+                <TextBlock Text="{Binding Path=[MagneticHeading], Source={StaticResource LocalizedStrings}}"
+                           FontSize="{StaticResource PhoneFontSizeNormal}"
+                           Foreground="{Binding SelectedColor, Converter={StaticResource ColorToBrushConverter}}"/>
+
+                <TextBlock Text="{Binding HeadingAccuracy, StringFormat=N1}" 
+                           FontSize="{StaticResource PhoneFontSizeExtraLarge}" FontWeight="Bold"
+                           Foreground="{Binding SelectedColor, Converter={StaticResource ColorToBrushConverter}}"/>
+
+                <TextBlock Text="{Binding Path=[Accuracy], Source={StaticResource LocalizedStrings}}"
+                           FontSize="{StaticResource PhoneFontSizeNormal}"
+                           Foreground="{Binding SelectedColor, Converter={StaticResource ColorToBrushConverter}}"/>
+
+            </StackPanel>
+        </Grid>
+
+    </Grid>
+
+</phone:PhoneApplicationPage>

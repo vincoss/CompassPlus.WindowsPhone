@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="E:\_Visual-Studio-Projects\2012\WindowsPhone\Vincoss.CompassPlus.WindowsPhone\CompassPlus.WindowsPhone.Test.nunit" total="8" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2014-06-05" time="17:44:00">
+  <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.8000" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="E:\_Visual-Studio-Projects\2012\WindowsPhone\Vincoss.CompassPlus.WindowsPhone\packages\NUnit.Runners.2.6.3\tools" machine-name="VINCOLAPTOP" user="fero" user-domain="VINCOLAPTOP" />
+  <culture-info current-culture="en-AU" current-uiculture="en-GB" />
+  <test-suite type="Project" name="E:\_Visual-Studio-Projects\2012\WindowsPhone\Vincoss.CompassPlus.WindowsPhone\CompassPlus.WindowsPhone.Test.nunit" executed="True" result="Success" success="True" time="0.334" asserts="0">
+    <results>
+      <test-suite type="Assembly" name="E:\_Visual-Studio-Projects\2012\WindowsPhone\Vincoss.CompassPlus.WindowsPhone\src\CompassPlus.WindowsPhone.Test\Bin\Debug\CompassPlus.WindowsPhone.Test.dll" executed="True" result="Success" success="True" time="0.287" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="CompassPlus" executed="True" result="Success" success="True" time="0.286" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="Test" executed="True" result="Success" success="True" time="0.285" asserts="0">
+                <results>
+                  <test-suite type="Namespace" name="Behaviors" executed="True" result="Success" success="True" time="0.192" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="TextBoxBehaviorTest" executed="True" result="Success" success="True" time="0.185" asserts="0">
+                        <results>
+                          <test-case name="CompassPlus.Test.Behaviors.TextBoxBehaviorTest.Filter_Test" executed="True" result="Success" success="True" time="0.127" asserts="1" />
+                          <test-case name="CompassPlus.Test.Behaviors.TextBoxBehaviorTest.GetSelectionStart_Test" executed="True" result="Success" success="True" time="0.015" asserts="1" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite type="Namespace" name="Globalization" executed="True" result="Success" success="True" time="0.007" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="LocalizedStringsTest" executed="True" result="Success" success="True" time="0.006" asserts="0">
+                        <results>
+                          <test-case name="CompassPlus.Test.Globalization.LocalizedStringsTest.WithLanguate_Test" executed="True" result="Success" success="True" time="0.003" asserts="1" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="UtilsTest" executed="True" result="Success" success="True" time="0.060" asserts="0">
+                    <results>
+                      <test-case name="CompassPlus.Test.UtilsTest.DoubleEquals_False_Test" executed="True" result="Success" success="True" time="0.004" asserts="1" />
+                      <test-case name="CompassPlus.Test.UtilsTest.DoubleEquals_NegativeBoth_Test" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                      <test-case name="CompassPlus.Test.UtilsTest.DoubleEquals_NegativeOne_Test" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="CompassPlus.Test.UtilsTest.DoubleEquals_ThrowsIfDiffBelowZero_Test" executed="True" result="Success" success="True" time="0.017" asserts="1" />
+                      <test-case name="CompassPlus.Test.UtilsTest.DoubleEquals_True_Test" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

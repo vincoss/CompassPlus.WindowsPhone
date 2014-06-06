@@ -1,0 +1,197 @@
+﻿<phone:PhoneApplicationPage x:Class="CompassPlus.Views.SettingsView"
+                            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                            xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+                            xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+                            xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+                            xmlns:behaviors="clr-namespace:CompassPlus.Behaviors"
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}"
+                            FontSize="{StaticResource PhoneFontSizeNormal}"
+                            Foreground="{StaticResource PhoneForegroundBrush}"
+                            SupportedOrientations="PortraitOrLandscape"
+                            shell:SystemTray.IsVisible="True">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Hidden">
+            <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!-- Header -->
+                <TextBlock Grid.Row="0" 
+                           Margin="0,10"
+                           Text="{Binding Path=LocalizedResources.Settings, Source={StaticResource LocalizedStrings}}" 
+                           FontSize="{StaticResource PhoneFontSizeLarge}"/>
+
+                <!-- Settings -->
+                <Grid Grid.Row="1">
+
+                    <StackPanel>
+                        
+                        <!-- Color -->
+                        <StackPanel Margin="0,10">
+
+                            <TextBlock Text="{Binding Path=LocalizedResources.Color, Source={StaticResource LocalizedStrings}}" 
+                                       FontSize="{StaticResource PhoneFontSizeLarge}"/>
+
+                            <toolkit:ListPicker ItemsSource="{Binding CompassColors}"
+                                                SelectedItem="{Binding CompassColor, Mode=TwoWay}" 
+                                                FullModeHeader="{Binding Path=LocalizedResources.SelectColor, Source={StaticResource LocalizedStrings}}"
+                                                Margin="0">
+
+                                <toolkit:ListPicker.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal">
+
+                                            <Border Height="32" Width="32" Margin="2,2,10,2"
+                                                    Background="{Binding Value, Converter={StaticResource ColorToBrushConverter}}"
+                                                    BorderBrush="Black" BorderThickness=".5" CornerRadius="2"/>
+
+                                            <TextBlock Text="{Binding Name, Converter={StaticResource LocalizedStringsConverter}}" 
+                                                       FontSize="{StaticResource PhoneFontSizeNormal}" VerticalAlignment="Center"/>
+
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </toolkit:ListPicker.ItemTemplate>
+
+                                <toolkit:ListPicker.FullModeItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal">
+
+                                            <Border Height="48" Width="48" Margin="5,5,10,5"
+                                                    Background="{Binding Value, Converter={StaticResource ColorToBrushConverter}}"
+                                                    BorderBrush="Black" BorderThickness=".5" CornerRadius="2"/>
+
+                                            <TextBlock Text="{Binding Name, Converter={StaticResource LocalizedStringsConverter}}" 
+                                                       FontSize="{StaticResource PhoneFontSizeMedium}" VerticalAlignment="Center"/>
+
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </toolkit:ListPicker.FullModeItemTemplate>
+
+                            </toolkit:ListPicker>
+
+                        </StackPanel>
+
+                        <!-- Type -->
+                        <StackPanel Margin="0,10">
+
+                            <TextBlock Text="{Binding Path=LocalizedResources.Type, Source={StaticResource LocalizedStrings}}" 
+                                       FontSize="{StaticResource PhoneFontSizeLarge}"/>
+
+                            <toolkit:ListPicker ItemsSource="{Binding CompassTypes}"
+                                                SelectedItem="{Binding CompassType, Mode=TwoWay}"
+                                                Margin="0">
+
+                                <toolkit:ListPicker.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="{Binding Converter={StaticResource LocalizedStringsConverter}}" 
+                                                       FontSize="{StaticResource PhoneFontSizeNormal}" />
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </toolkit:ListPicker.ItemTemplate>
+
+                            </toolkit:ListPicker>
+
+                        </StackPanel>
+
+                        <!-- Rose -->
+                        <StackPanel Margin="0,10">
+
+                            <TextBlock Text="{Binding Path=LocalizedResources.Rose, Source={StaticResource LocalizedStrings}}" 
+                                       FontSize="{StaticResource PhoneFontSizeLarge}"/>
+
+                            <toolkit:ListPicker ItemsSource="{Binding CompassRoses}"
+                                                SelectedItem="{Binding CompassRose, Mode=TwoWay}"
+                                                Margin="0">
+
+                                <toolkit:ListPicker.ItemTemplate>
+                                    <DataTemplate>
+
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="{Binding Converter={StaticResource LocalizedStringsConverter}}" 
+                                                       FontSize="{StaticResource PhoneFontSizeNormal}" />
+                                        </StackPanel>
+
+                                    </DataTemplate>
+                                </toolkit:ListPicker.ItemTemplate>
+
+                            </toolkit:ListPicker>
+
+                        </StackPanel>
+
+                        <!-- Language -->
+                        <StackPanel Margin="0,10">
+
+                            <TextBlock Text="{Binding Path=LocalizedResources.Language, Source={StaticResource LocalizedStrings}}" 
+                                       FontSize="{StaticResource PhoneFontSizeLarge}"/>
+
+                            <toolkit:ListPicker ItemsSource="{Binding Languages}"
+                                                SelectedItem="{Binding Language, Mode=TwoWay}"
+                                                Margin="0">
+
+                                <toolkit:ListPicker.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Name, Converter={StaticResource LocalizedStringsConverter}}" 
+                                                   FontSize="{StaticResource PhoneFontSizeNormal}"/>
+                                    </DataTemplate>
+                                </toolkit:ListPicker.ItemTemplate>
+
+                            </toolkit:ListPicker>
+
+                        </StackPanel>
+
+                        <!-- Update -->
+                        <StackPanel Margin="0,10">
+
+                            <TextBlock Text="{Binding Path=LocalizedResources.UpdateInterval, Source={StaticResource LocalizedStrings}}" 
+                                       FontSize="{StaticResource PhoneFontSizeLarge}"/>
+
+                            <TextBox Text="{Binding TimeBetweenUpdates, Mode=TwoWay}" InputScope="Digits" 
+                                     FontSize="{StaticResource PhoneFontSizeNormal}" 
+                                     behaviors:TextBoxBehavior.CharFilter="{Binding CharFilter}"
+                                     Margin="-10,0,0,0"/>
+
+                        </StackPanel>
+
+                        <!-- Error -->
+                        <StackPanel Margin="0,10">
+
+                            <TextBlock Text="{Binding Path=LocalizedResources.ErrorReports, Source={StaticResource LocalizedStrings}}" 
+                                       FontSize="{StaticResource PhoneFontSizeLarge}"/>
+
+                            <CheckBox IsChecked="{Binding CollectErrors, Mode=TwoWay}" 
+                                      Margin="-10,0,0,0">
+                                <TextBlock Text="{Binding Path=LocalizedResources.CollectErrors, Source={StaticResource LocalizedStrings}}" 
+                                           FontSize="{StaticResource PhoneFontSizeNormal}"/>
+                            </CheckBox>
+
+                        </StackPanel>
+
+                        <!-- Reset -->
+                        <StackPanel Margin="0,10">
+
+                            <TextBlock Text="{Binding Path=LocalizedResources.RestoreDefaults, Source={StaticResource LocalizedStrings}}" 
+                                       FontSize="{StaticResource PhoneFontSizeLarge}"/>
+
+                            <Button Content="{Binding Path=LocalizedResources.Restore, Source={StaticResource LocalizedStrings}}"
+                                    Command="{Binding RestoreCommand}" 
+                                    Margin="-10,0,0,0"/>
+
+                        </StackPanel>
+
+                        <!-- Spacer -->
+                        <StackPanel Margin="0,10"/>
+
+                    </StackPanel>
+
+                </Grid>
+
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+
+</phone:PhoneApplicationPage>

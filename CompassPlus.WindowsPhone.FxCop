@@ -1,0 +1,957 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FxCopProject Version="10.0" Name="CompassPlus.WindowsPhone">
+ <ProjectOptions>
+  <SharedProject>True</SharedProject>
+  <Stylesheet Apply="False">$(FxCopDir)\Xml\FxCopReport.xsl</Stylesheet>
+  <SaveMessages>
+   <Project Status="Active, Excluded" NewOnly="False" />
+   <Report Status="Active" NewOnly="False" />
+  </SaveMessages>
+  <ProjectFile Compress="True" DefaultTargetCheck="True" DefaultRuleCheck="True" SaveByRuleGroup="" Deterministic="True" />
+  <EnableMultithreadedLoad>True</EnableMultithreadedLoad>
+  <EnableMultithreadedAnalysis>True</EnableMultithreadedAnalysis>
+  <SourceLookup>True</SourceLookup>
+  <AnalysisExceptionsThreshold>10</AnalysisExceptionsThreshold>
+  <RuleExceptionsThreshold>1</RuleExceptionsThreshold>
+  <Spelling Locale="en-GB" />
+  <OverrideRuleVisibilities>False</OverrideRuleVisibilities>
+  <CustomDictionaries SearchFxCopDir="True" SearchUserProfile="True" SearchProjectDir="True" />
+  <SearchGlobalAssemblyCache>False</SearchGlobalAssemblyCache>
+  <DeadlockDetectionTimeout>120</DeadlockDetectionTimeout>
+  <IgnoreGeneratedCode>False</IgnoreGeneratedCode>
+ </ProjectOptions>
+ <Targets>
+  <Target Name="$(ProjectDir)/src/CompassPlus.WindowsPhone/Bin/Release/CompassPlus.WindowsPhone.dll" Analyze="True" AnalyzeAllChildren="True" />
+ </Targets>
+ <Rules>
+  <RuleFiles>
+   <RuleFile Name="$(FxCopDir)\Rules\DesignRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\GlobalizationRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\InteroperabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\MobilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\NamingRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\PerformanceRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\PortabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\SecurityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\SecurityTransparencyRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\UsageRules.dll" Enabled="True" AllRulesEnabled="True" />
+  </RuleFiles>
+  <Groups />
+  <Settings />
+ </Rules>
+ <FxCopReport Version="10.0">
+  <Namespaces>
+   <Namespace Name="CompassPlus.Behaviors">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2014-06-06 23:33:25Z">
+      <Issue>
+       <Item>CompassPlus.Behaviors</Item>
+      </Issue>
+     </Message>
+     <Message Id="Behaviors" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2014-06-06 23:33:25Z">
+      <Issue Name="Namespace">
+       <Item>Behaviors</Item>
+       <Item>CompassPlus.Behaviors</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="CompassPlus.Controls">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2014-06-06 23:33:25Z">
+      <Issue>
+       <Item>CompassPlus.Controls</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="CompassPlus.Converters">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2014-06-06 23:33:25Z">
+      <Issue>
+       <Item>CompassPlus.Converters</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="CompassPlus.Filter">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2014-06-06 23:33:25Z">
+      <Issue>
+       <Item>CompassPlus.Filter</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="CompassPlus.Framework.Commands">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2014-06-06 23:33:25Z">
+      <Issue>
+       <Item>CompassPlus.Framework.Commands</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="CompassPlus.Framework.ViewModel">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2014-06-06 23:33:25Z">
+      <Issue>
+       <Item>CompassPlus.Framework.ViewModel</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="CompassPlus.Globalization">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2014-06-06 23:33:25Z">
+      <Issue>
+       <Item>CompassPlus.Globalization</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="CompassPlus.Models">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2014-06-06 23:33:25Z">
+      <Issue>
+       <Item>CompassPlus.Models</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="CompassPlus.Services">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2014-06-06 23:33:25Z">
+      <Issue>
+       <Item>CompassPlus.Services</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="CompassPlus.ViewModels">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2014-06-06 23:33:25Z">
+      <Issue>
+       <Item>CompassPlus.ViewModels</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+  </Namespaces>
+  <Targets>
+   <Target Name="$(ProjectDir)/src/CompassPlus.WindowsPhone/Bin/Release/CompassPlus.WindowsPhone.dll">
+    <Modules>
+     <Module Name="compassplus.windowsphone.dll">
+      <Messages>
+       <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Created="2014-06-06 23:33:25Z">
+        <Issue Name="NoStrongName">
+         <Item>'CompassPlus.WindowsPhone.dll'</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Created="2014-06-06 23:33:25Z">
+        <Issue>
+         <Item>'CompassPlus.WindowsPhone.dll'</Item>
+        </Issue>
+       </Message>
+      </Messages>
+      <Namespaces>
+       <Namespace Name="CompassPlus">
+        <Types>
+         <Type Name="App">
+          <Members>
+           <Member Name="#Application_Activated(System.Object,Microsoft.Phone.Shell.ActivatedEventArgs)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Created="2014-06-06 23:33:25Z">
+              <Issue>
+               <Item>'App.Application_Activated(object, ActivatedEventArgs)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Application_Closing(System.Object,Microsoft.Phone.Shell.ClosingEventArgs)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Created="2014-06-06 23:33:25Z">
+              <Issue>
+               <Item>'App.Application_Closing(object, ClosingEventArgs)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Application_Deactivated(System.Object,Microsoft.Phone.Shell.DeactivatedEventArgs)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Created="2014-06-06 23:33:25Z">
+              <Issue>
+               <Item>'App.Application_Deactivated(object, DeactivatedEventArgs)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Application_Launching(System.Object,Microsoft.Phone.Shell.LaunchingEventArgs)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Created="2014-06-06 23:33:25Z">
+              <Issue>
+               <Item>'App.Application_Launching(object, LaunchingEventArgs)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#InitializeLanguage()">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2014-06-06 23:33:25Z" FixCategory="NonBreaking">
+              <Issue>
+               <Item>'App.InitializeLanguage()'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="Constants">
+          <Members>
+           <Member Name="#Colors">
+            <Messages>
+             <Message TypeName="ArrayFieldsShouldNotBeReadOnly" Category="Microsoft.Security" CheckId="CA2105" Created="2014-06-06 23:33:25Z">
+              <Issue>
+               <Item>'Constants.Colors'</Item>
+              </Issue>
+             </Message>
+             <Message Id="Colors" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2014-06-06 23:33:25Z">
+              <Issue Name="Member">
+               <Item>Colors</Item>
+               <Item>'Constants.Colors'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#CompasRoses">
+            <Messages>
+             <Message TypeName="ArrayFieldsShouldNotBeReadOnly" Category="Microsoft.Security" CheckId="CA2105" Created="2014-06-06 23:33:25Z">
+              <Issue>
+               <Item>'Constants.CompasRoses'</Item>
+              </Issue>
+             </Message>
+             <Message Id="Compas" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2014-06-06 23:33:25Z">
+              <Issue Name="Member">
+               <Item>Compas</Item>
+               <Item>'Constants.CompasRoses'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#CompassTypes">
+            <Messages>
+             <Message TypeName="ArrayFieldsShouldNotBeReadOnly" Category="Microsoft.Security" CheckId="CA2105" Created="2014-06-06 23:33:25Z">
+              <Issue>
+               <Item>'Constants.CompassTypes'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#DefaultCompassColor">
+            <Messages>
+             <Message Id="Color" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2014-06-06 23:33:25Z">
+              <Issue Name="Member">
+               <Item>Color</Item>
+               <Item>'Constants.DefaultCompassColor'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Languages">
+            <Messages>
+             <Message TypeName="ArrayFieldsShouldNotBeReadOnly" Category="Microsoft.Security" CheckId="CA2105" Created="2014-06-06 23:33:25Z">
+              <Issue>
+               <Item>'Constants.Languages'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#NotifyPropertyChangeDoubleAccurary">
+            <Messages>
+             <Message Id="Accurary" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2014-06-06 23:33:25Z">
+              <Issue Name="Member">
+               <Item>Accurary</Item>
+               <Item>'Constants.NotifyPropertyChangeDoubleAccurary'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="StoreKeyConstants">
+          <Members>
+           <Member Name="#CompassColor">
+            <Messages>
+             <Message Id="Color" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2014-06-06 23:33:25Z">
+              <Issue Name="Member">
+               <Item>Color</Item>
+               <Item>'StoreKeyConstants.CompassColor'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="Utils">
+          <Messages>
+           <Message Id="Utils" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2014-06-06 23:33:25Z">
+            <Issue Name="Type">
+             <Item>Utils</Item>
+             <Item>'Utils'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#GetPropertyName`1(System.Linq.Expressions.Expression`1&lt;System.Func`1&lt;!!0&gt;&gt;)">
+            <Messages>
+             <Message TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011" Created="2014-06-06 23:33:25Z">
+              <Issue>
+               <Item>'propertyExpression'</Item>
+               <Item>'Utils.GetPropertyName&lt;T&gt;(Expression&lt;Func&lt;T&gt;&gt;)'</Item>
+               <Item>'Expression&lt;Func&lt;T&gt;&gt;'</Item>
+               <Item>'LambdaExpression'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="DoNotNestGenericTypesInMemberSignatures" Category="Microsoft.Design" CheckId="CA1006" Created="2014-06-06 23:33:25Z">
+              <Issue>
+               <Item>'Utils.GetPropertyName&lt;T&gt;(Expression&lt;Func&lt;T&gt;&gt;)'</Item>
+               <Item>'Expression&lt;Func&lt;T&gt;&gt;'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="Utils+TryParseHandler`1">
+          <Messages>
+           <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Created="2014-06-06 23:33:25Z">
+            <Issue>
+             <Item>'Utils.TryParseHandler&lt;T&gt;'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#Invoke(System.String,!0&amp;)">
+            <Messages>
+             <Message Id="1#" TypeName="AvoidOutParameters" Category="Microsoft.Design" CheckId="CA1021" Created="2014-06-06 23:33:25Z">
+              <Issue>
+               <Item>'result'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="CompassPlus.Behaviors">
+        <Types>
+         <Type Name="TextBoxBehavior">
+          <Messages>
+           <Message Id="Behavior" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2014-06-06 23:33:25Z">
+            <Issue Name="Type">
+             <Item>Behavior</Item>
+             <Item>'TextBoxBehavior'</Item>
+            </Issue>
+           </Message>
+           <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Created="2014-06-06 23:33:25Z">
+            <Issue>
+             <Item>'TextBoxBehavior'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="CompassPlus.Converters">
+        <Types>
+         <Type Name="ColorToBrushConverter">
+          <Messages>
+           <Message Id="Color" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2014-06-06 23:33:25Z">
+            <Issue Name="Type">
+             <Item>Color</Item>
+             <Item>'ColorToBrushConverter'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2014-06-06 23:33:25Z">
+              <Issue>
+               <Item>'ColorToBrushConverter.Convert(object, Type, object, CultureInfo)'</Item>
+               <Item>'object'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="CompassPlus.Filter">
+        <Types>
+         <Type Name="ReadingSmoother">
+          <Members>
+           <Member Name="#.ctor(CompassPlus.Filter.IFilterStrategy,System.Int32)">
+            <Messages>
+             <Message TypeName="DefaultParametersShouldNotBeUsed" Category="Microsoft.Design" CheckId="CA1026" Created="2014-06-06 23:33:25Z">
+              <Issue>
+               <Item>'ReadingSmoother.ReadingSmoother(IFilterStrategy, int)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="CompassPlus.Framework.Commands">
+        <Types>
+         <Type Name="Command">
+          <Members>
+           <Member Name="#RaiseCanExecuteChanged()">
+            <Messages>
+             <Message TypeName="UseEventsWhereAppropriate" Category="Microsoft.Design" CheckId="CA1030" Created="2014-06-06 23:33:25Z">
+              <Issue>
+               <Item>'Command.RaiseCanExecuteChanged()'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="DelegateCommand">
+          <Members>
+           <Member Name="#.ctor(System.Action,System.Func`1&lt;System.Boolean&gt;)">
+            <Messages>
+             <Message Id="Excute" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2014-06-06 23:33:25Z">
+              <Issue Name="MemberParameter">
+               <Item>'DelegateCommand.DelegateCommand(Action, Func&lt;bool&gt;)'</Item>
+               <Item>Excute</Item>
+               <Item>'canExcute'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="CompassPlus.Framework.ViewModel">
+        <Types>
+         <Type Name="PropertyChangedBase">
+          <Members>
+           <Member Name="#NotifyOfPropertyChanged`1(System.Linq.Expressions.Expression`1&lt;System.Func`1&lt;!!0&gt;&gt;)">
+            <Messages>
+             <Message TypeName="DoNotNestGenericTypesInMemberSignatures" Category="Microsoft.Design" CheckId="CA1006" Created="2014-06-06 23:33:25Z">
+              <Issue>
+               <Item>'PropertyChangedBase.NotifyOfPropertyChanged&lt;TProperty&gt;(Expression&lt;Func&lt;TProperty&gt;&gt;)'</Item>
+               <Item>'Expression&lt;Func&lt;TProperty&gt;&gt;'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#OnUiThread(System.Action)">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2014-06-06 23:33:25Z" FixCategory="NonBreaking">
+              <Issue>
+               <Item>'PropertyChangedBase.OnUiThread(Action)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="ViewModelBase">
+          <Members>
+           <Member Name="#UiAction">
+            <Messages>
+             <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Created="2014-06-06 23:33:25Z">
+              <Issue>
+               <Item>'ViewModelBase.UiAction'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="CompassPlus.Globalization">
+        <Types>
+         <Type Name="LocalizedStrings">
+          <Messages>
+           <Message TypeName="IdentifiersShouldHaveCorrectSuffix" Category="Microsoft.Naming" CheckId="CA1710" Created="2014-06-06 23:33:25Z">
+            <Issue>
+             <Item>'LocalizedStrings'</Item>
+             <Item>Collection</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#WithLanguate(System.String)">
+            <Messages>
+             <Message Id="Languate" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2014-06-06 23:33:25Z">
+              <Issue Name="Member">
+               <Item>Languate</Item>
+               <Item>'LocalizedStrings.WithLanguate(string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="CompassPlus.Sensors">
+        <Types>
+         <Type Name="CompassData">
+          <Members>
+           <Member Name="#.ctor(System.DateTimeOffset,System.Double,System.Double,System.Double,Microsoft.Xna.Framework.Vector3)">
+            <Messages>
+             <Message Id="Accurancy" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2014-06-06 23:33:25Z">
+              <Issue Name="MemberParameter">
+               <Item>'CompassData.CompassData(DateTimeOffset, double, double, double, Vector3)'</Item>
+               <Item>Accurancy</Item>
+               <Item>'headingAccurancy'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="DeviceCompass">
+          <Members>
+           <Member Name="#Dispose()">
+            <Messages>
+             <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Created="2014-06-06 23:33:25Z">
+              <Issue Name="DisposeImplementation">
+               <Item>'DeviceCompass.Dispose()'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="ICompass">
+          <Members>
+           <Member Name="#Stop()">
+            <Messages>
+             <Message Id="Stop" TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716" Created="2014-06-06 23:33:25Z">
+              <Issue Name="Member">
+               <Item>'ICompass.Stop()'</Item>
+               <Item>Stop</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="MockCompass">
+          <Messages>
+           <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Created="2014-06-06 23:33:25Z">
+            <Issue Name="ProvideDisposeBool">
+             <Item>'MockCompass'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#Dispose()">
+            <Messages>
+             <Message TypeName="CallGCSuppressFinalizeCorrectly" Category="Microsoft.Usage" CheckId="CA1816" Created="2014-06-06 23:33:25Z">
+              <Issue Name="NotCalled">
+               <Item>'MockCompass.Dispose()'</Item>
+               <Item>'GC.SuppressFinalize(object)'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Created="2014-06-06 23:33:25Z">
+              <Issue Name="DisposeImplementation">
+               <Item>'MockCompass.Dispose()'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#OnCalibrate()">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Created="2014-06-06 23:33:25Z">
+              <Issue>
+               <Item>'MockCompass.OnCalibrate()'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="CompassPlus.Services">
+        <Types>
+         <Type Name="ISettings">
+          <Members>
+           <Member Name="#Get(System.String)">
+            <Messages>
+             <Message Id="Get" TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716" Created="2014-06-06 23:33:25Z">
+              <Issue Name="Member">
+               <Item>'ISettings.Get(string)'</Item>
+               <Item>Get</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Get(System.String,System.Action`1&lt;System.String&gt;)">
+            <Messages>
+             <Message Id="Get" TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716" Created="2014-06-06 23:33:25Z">
+              <Issue Name="Member">
+               <Item>'ISettings.Get(string, Action&lt;string&gt;)'</Item>
+               <Item>Get</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="IsolatedSettings">
+          <Members>
+           <Member Name="#GetSettings()">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2014-06-06 23:33:25Z" FixCategory="NonBreaking">
+              <Issue>
+               <Item>'IsolatedSettings.GetSettings()'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="MessageService">
+          <Members>
+           <Member Name="#ShowMessageInternal(System.String,System.String,System.Windows.MessageBoxButton)">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2014-06-06 23:33:25Z" FixCategory="NonBreaking">
+              <Issue>
+               <Item>'MessageService.ShowMessageInternal(string, string, MessageBoxButton)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="MockSettings">
+          <Members>
+           <Member Name="#.cctor()">
+            <Messages>
+             <Message Id="System.Collections.Generic.Dictionary`2&lt;System.String,System.String&gt;.#ctor(System.Collections.Generic.IEqualityComparer`1&lt;System.String&gt;)" TypeName="UseOrdinalStringComparison" Category="Microsoft.Globalization" CheckId="CA1309" Created="2014-06-06 23:33:25Z">
+              <Issue Name="StringComparer">
+               <Item>'MockSettings.MockSettings()'</Item>
+               <Item>StringComparer.InvariantCultureIgnoreCase</Item>
+               <Item>'Dictionary&lt;string, string&gt;.Dictionary(IEqualityComparer&lt;string&gt;)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="CompassPlus.ViewModels">
+        <Types>
+         <Type Name="AboutViewModel">
+          <Members>
+           <Member Name="#Copyright">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2014-06-06 23:33:25Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'AboutViewModel.Copyright'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+            <Accessors>
+             <Accessor Name="#get_Copyright()">
+              <Messages>
+               <Message Id="System.String.Format(System.String,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2014-06-06 23:33:25Z">
+                <Issue Name="IFormatProviderAlternateString">
+                 <Item>'string.Format(string, object)'</Item>
+                 <Item>'AboutViewModel.Copyright.get()'</Item>
+                 <Item>'string.Format(IFormatProvider, string, params object[])'</Item>
+                 <Item>'CultureInfo.CurrentCulture'</Item>
+                 <Item>'CultureInfo.InvariantCulture'</Item>
+                </Issue>
+               </Message>
+              </Messages>
+             </Accessor>
+            </Accessors>
+           </Member>
+           <Member Name="#Version">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2014-06-06 23:33:25Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'AboutViewModel.Version'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#VersionString">
+            <Accessors>
+             <Accessor Name="#get_VersionString()">
+              <Messages>
+               <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2014-06-06 23:33:25Z">
+                <Issue Name="IFormatProviderAlternateString">
+                 <Item>'string.Format(string, object, object)'</Item>
+                 <Item>'AboutViewModel.VersionString.get()'</Item>
+                 <Item>'string.Format(IFormatProvider, string, params object[])'</Item>
+                 <Item>'CultureInfo.CurrentCulture'</Item>
+                 <Item>'CultureInfo.InvariantCulture'</Item>
+                </Issue>
+               </Message>
+              </Messages>
+             </Accessor>
+            </Accessors>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="CompassRoseViewModel">
+          <Members>
+           <Member Name="#ColorList">
+            <Messages>
+             <Message Id="Color" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2014-06-06 23:33:25Z">
+              <Issue Name="Member">
+               <Item>Color</Item>
+               <Item>'CompassRoseViewModel.ColorList'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#SelectedColor">
+            <Messages>
+             <Message Id="Color" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2014-06-06 23:33:25Z">
+              <Issue Name="Member">
+               <Item>Color</Item>
+               <Item>'CompassRoseViewModel.SelectedColor'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SettingsViewModel">
+          <Members>
+           <Member Name="#CompassColor">
+            <Messages>
+             <Message Id="Color" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2014-06-06 23:33:25Z">
+              <Issue Name="Member">
+               <Item>Color</Item>
+               <Item>'SettingsViewModel.CompassColor'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#CompassColors">
+            <Messages>
+             <Message Id="Colors" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2014-06-06 23:33:25Z">
+              <Issue Name="Member">
+               <Item>Colors</Item>
+               <Item>'SettingsViewModel.CompassColors'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="CompassPlus.Views">
+        <Types>
+         <Type Name="AboutView">
+          <Members>
+           <Member Name="#LayoutRoot">
+            <Messages>
+             <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Created="2014-06-06 23:33:25Z">
+              <Issue>
+               <Item>'AboutView.LayoutRoot'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="CalibrateView">
+          <Members>
+           <Member Name="#LayoutRoot">
+            <Messages>
+             <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Created="2014-06-06 23:33:25Z">
+              <Issue>
+               <Item>'CalibrateView.LayoutRoot'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="CompassRoseView">
+          <Members>
+           <Member Name="#OnCaptionPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2014-06-06 23:33:25Z" FixCategory="NonBreaking">
+              <Issue>
+               <Item>'CompassRoseView.OnCaptionPropertyChanged(DependencyPropertyChangedEventArgs)'</Item>
+              </Issue>
+             </Message>
+             <Message Id="e" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Created="2014-06-06 23:33:25Z" FixCategory="NonBreaking">
+              <Issue>
+               <Item>'e'</Item>
+               <Item>'CompassRoseView.OnCaptionPropertyChanged(DependencyPropertyChangedEventArgs)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#OuterCanvas">
+            <Messages>
+             <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Created="2014-06-06 23:33:25Z">
+              <Issue>
+               <Item>'CompassRoseView.OuterCanvas'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="CompassView">
+          <Members>
+           <Member Name="#GridCompass">
+            <Messages>
+             <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Created="2014-06-06 23:33:25Z">
+              <Issue>
+               <Item>'CompassView.GridCompass'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#UcCompassRoseView">
+            <Messages>
+             <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Created="2014-06-06 23:33:25Z">
+              <Issue>
+               <Item>'CompassView.UcCompassRoseView'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SettingsView">
+          <Members>
+           <Member Name="#LayoutRoot">
+            <Messages>
+             <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Created="2014-06-06 23:33:25Z">
+              <Issue>
+               <Item>'SettingsView.LayoutRoot'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+      <Resources>
+       <Resource Name="CompassPlus.Resources.AppResources.resources">
+        <Messages>
+         <Message Id="Vincoss" TypeName="ResourceStringsShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1703" Created="2014-06-06 23:33:25Z">
+          <Issue Name="StringResource">
+           <Item>'CompassPlus.Resources.AppResources.resx'</Item>
+           <Item>CopyrightShort</Item>
+           <Item>Vincoss</Item>
+           <Item>Copyright © {0} Vincoss.</Item>
+          </Issue>
+         </Message>
+        </Messages>
+       </Resource>
+      </Resources>
+     </Module>
+    </Modules>
+   </Target>
+  </Targets>
+  <Rules>
+   <Rule TypeName="ArrayFieldsShouldNotBeReadOnly" Category="Microsoft.Security" CheckId="CA2105">
+    <Resolution Name="Default">Either replace {0} with a strongly typed collection that cannot be changed, or replace the public field with a method that returns a clone of a private array.</Resolution>
+   </Rule>
+   <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+    <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   </Rule>
+   <Rule TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020">
+    <Resolution Name="Default">Consider merging the types defined in '{0}' with another namespace.</Resolution>
+   </Rule>
+   <Rule TypeName="AvoidOutParameters" Category="Microsoft.Design" CheckId="CA1021">
+    <Resolution Name="Default">Consider a design that does not require that {0} be an out parameter.</Resolution>
+   </Rule>
+   <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+    <Resolution Name="Default">{0} appears to have no upstream public or protected callers.</Resolution>
+   </Rule>
+   <Rule TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823">
+    <Resolution Name="Default">It appears that field {0} is never used or is only ever assigned to. Use this field or remove it.</Resolution>
+   </Rule>
+   <Rule TypeName="CallGCSuppressFinalizeCorrectly" Category="Microsoft.Usage" CheckId="CA1816">
+    <Resolution Name="NotCalled">Change {0} to call {1}. This will prevent derived types that introduce a finalizer from needing to re-implement 'IDisposable' to call it.</Resolution>
+   </Rule>
+   <Rule TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011">
+    <Resolution Name="Default">Consider changing the type of parameter {0} in {1} from {2} to its base type {3}. This method appears to only require base class members in its implementation. Suppress this violation if there is a compelling reason to require the more derived type in the method signature.</Resolution>
+   </Rule>
+   <Rule TypeName="DefaultParametersShouldNotBeUsed" Category="Microsoft.Design" CheckId="CA1026">
+    <Resolution Name="Default">Replace method {0} with an overload that supplies all default arguments.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031">
+    <Resolution Name="Default">Modify {0} to catch a more specific exception than {1} or rethrow the exception.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051">
+    <Resolution Name="Default">Because field {0} is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotNestGenericTypesInMemberSignatures" Category="Microsoft.Design" CheckId="CA1006">
+    <Resolution Name="Default">Consider a design where {0} doesn't nest generic type {1}.</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+    <Resolution Name="Member">Correct the spelling of '{0}' in member name {1} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+    <Resolution Name="MemberParameter">In method {0}, correct the spelling of '{1}' in parameter name {2} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+    <Resolution Name="Namespace">Correct the spelling of '{0}' in namespace name '{1}'.</Resolution>
+    <Resolution Name="Type">Correct the spelling of '{0}' in type name {1}.</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldHaveCorrectSuffix" Category="Microsoft.Naming" CheckId="CA1710">
+    <Resolution Name="Default">Rename {0} to end in '{1}'.</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716">
+    <Resolution Name="Member">Rename virtual/interface member {0} so that it no longer conflicts with the reserved language keyword '{1}'. Using a reserved keyword as the name of a virtual/interface member makes it harder for consumers in other languages to override/implement the member.</Resolution>
+   </Rule>
+   <Rule TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063">
+    <Resolution Name="DisposeImplementation">Modify {0} so that it calls Dispose(true), then calls GC.SuppressFinalize on the current object instance ('this' or 'Me' in Visual Basic), and then returns.</Resolution>
+    <Resolution Name="ProvideDisposeBool">Provide an overridable implementation of Dispose(bool) on {0} or mark the type as sealed. A call to Dispose(false) should only clean up native resources. A call to Dispose(true) should clean up both managed and native resources.</Resolution>
+   </Rule>
+   <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+    <Resolution Name="Default">Mark {0} with CLSCompliant(true) because it exposes externally visible types.</Resolution>
+   </Rule>
+   <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+    <Resolution Name="Default">The 'this' parameter (or 'Me' in Visual Basic) of {0} is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Resolution>
+   </Rule>
+   <Rule TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034">
+    <Resolution Name="Default">Do not nest type {0}. Alternatively, change its accessibility so that it is not externally visible.</Resolution>
+   </Rule>
+   <Rule TypeName="ResourceStringsShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1703">
+    <Resolution Name="StringResource">In resource {0}, referenced by name '{1}', correct the spelling of '{2}' in string value '{3}'.</Resolution>
+   </Rule>
+   <Rule TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801">
+    <Resolution Name="Default">Parameter {0} of {1} is never used. Remove the parameter or use it in the method body.</Resolution>
+   </Rule>
+   <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+    <Resolution Name="IFormatProviderAlternateString">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify {4}.</Resolution>
+   </Rule>
+   <Rule TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053">
+    <Resolution Name="Default">Because type {0} contains only 'static' ('Shared' in Visual Basic) members, add a default private constructor to prevent the compiler from adding a default public constructor.</Resolution>
+   </Rule>
+   <Rule TypeName="UseEventsWhereAppropriate" Category="Microsoft.Design" CheckId="CA1030">
+    <Resolution Name="Default">Consider making {0} an event.</Resolution>
+   </Rule>
+   <Rule TypeName="UseOrdinalStringComparison" Category="Microsoft.Globalization" CheckId="CA1309">
+    <Resolution Name="StringComparer">{0} passes '{1}' as the 'StringComparer' parameter to {2}. To perform a non-linguistic comparison, specify 'StringComparer.Ordinal' or 'StringComparer.OrdinalIgnoreCase' instead.</Resolution>
+   </Rule>
+  </Rules>
+ </FxCopReport>
+</FxCopProject>

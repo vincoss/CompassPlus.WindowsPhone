@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1000]E:\_Visual-Studio-Projects\2012\WindowsPhone\Vincoss.CompassPlus.WindowsPhone\CompassPlus.WindowsPhone.Test.nunit</TopNode>
+  <SelectedNode>[0-1007]CompassPlus.Test.UtilsTest.Test</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1000]E:\_Visual-Studio-Projects\2012\WindowsPhone\Vincoss.CompassPlus.WindowsPhone\CompassPlus.WindowsPhone.Test.nunit" Expanded="true" />
+    <Node UniqueName="[0-1008]E:\_Visual-Studio-Projects\2012\WindowsPhone\Vincoss.CompassPlus.WindowsPhone\src\CompassPlus.WindowsPhone.Test\Bin\Debug\CompassPlus.WindowsPhone.Test.dll" Expanded="true" />
+    <Node UniqueName="[0-1009]CompassPlus" Expanded="true" />
+    <Node UniqueName="[0-1010]CompassPlus.Test" Expanded="true" />
+    <Node UniqueName="[0-1001]CompassPlus.Test.UtilsTest" Expanded="true" />
+  </Nodes>
+</VisualState>
